@@ -13,9 +13,9 @@ import configureStore from './component/store/configureStore'
 
 const store=configureStore()
 
-store.subscribe(()=>{
-    console.log(store.getState())
-})
+// store.subscribe(()=>{
+//     console.log(store.getState())
+// })
 
 if(localStorage.getItem('authToken')){
     store.dispatch(startGetTickets())

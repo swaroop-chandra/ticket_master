@@ -43,7 +43,7 @@ class Register extends React.Component{
                     <input className='form-control' placeholder='email' type='email' value={this.state.email} onChange={this.handleChange} name="email" required/>
                 </div >
                 <div className='form-group inputBox'>
-                    <input className='form-control' placeholder='password' type='password'value={this.state.password} onChange={this.handleChange}  name="password" required/>
+                    <input className='form-control' placeholder='password' type='password'value={this.state.password} onChange={this.handleChange} minLength='8' name="password" required/>
                 </div >
                 <div >
                 <input type='submit' className='btn btn-primary'/>
