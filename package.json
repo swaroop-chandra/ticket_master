@@ -7,6 +7,8 @@
     "start": "node index.js",
     "dev-server": "nodemon index.js",
     "app": "concurrently \"nodemon index.js\" \"cd client && npm start\"",
+    "heroku-prenuild":"npm install",
+    "heroku-postbuild":"cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

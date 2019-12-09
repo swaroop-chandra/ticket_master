@@ -1,4 +1,5 @@
 import axios from '../../config/axios'
+import Swal from 'sweetalert2'
 
 export const getTickets=(tickets)=>{
     return {type:"GET_TICKETS",payload:tickets}
@@ -31,7 +32,7 @@ export const startAddTickets=(data)=>{
     })
     .then(response=>{
         if(response.data.hasOwnProperty('errors')){
-            alert(response.data.message)
+            Swal.fire(response.data.message,'','error')
         }else{
             // dispatch(addTickets())
             window.location.reload()
