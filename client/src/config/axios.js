@@ -1,7 +1,7 @@
 import Axios from 'axios'
 
 const axios=Axios.create({
-    baseURL:'http://localhost:3026'
+    baseURL:'https://ticket-master-swaroop666.herokuapp.com/api'
 })
 
 export default axios

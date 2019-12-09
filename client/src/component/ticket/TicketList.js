@@ -46,7 +46,7 @@ searchHandle=(e)=>{
          ticket=ticket.code.toLowerCase()
        return ((ticket).toString().includes(text)==1)
     })
-    console.log(tickets)
+    // console.log(tickets)
     this.setState({text,tickets})
 }
 

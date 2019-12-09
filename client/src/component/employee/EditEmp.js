@@ -17,7 +17,7 @@ class EditEmp extends React.Component{
         this.props.dispatch(startEditEmployee(id,formData,this.props))
     }
     render(){
-            console.log(this.props.employee)
+            // console.log(this.props.employee)
 
         return (
             <div className='container'>
